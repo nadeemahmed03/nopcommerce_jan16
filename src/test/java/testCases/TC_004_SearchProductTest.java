@@ -17,14 +17,14 @@ public class TC_004_SearchProductTest extends BaseClass{
 			
 			HomePage hp=new HomePage(driver);
 			
-			hp.enterSearchText("ray");
+			hp.enterSearchText("Nokia");
 			
 			hp.clickSearchButton();
 			
 			SearchPage sp=new SearchPage(driver);
-			sp.isProductExist("ray");
+			sp.isProductExist("Nokia");
 
-			Assert.assertEquals(sp.isProductExist("ray"),true);
+			Assert.assertEquals(sp.isProductExist("Nokia"),true);
 
 		} catch (Exception e) {
 			Assert.fail();
